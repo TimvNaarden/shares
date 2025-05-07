@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const purchasePrice = 107;	
 
     function fetchStockPrice() {
-        fetch(`https://finnhub.io/api/v1/quote?symbol=NVDA&token=cpjik19r01qs8l01e7ngcpjik19r01qs8l01e7o0`)
+        fetch(``)
             .then(response => response.json())
             .then(data => {			
-				fetch(`https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_6rZiWn9poPSRN91zaQx1ZkShDuoJEdqsuvQnGEcO&currencies=EUR`)
+				fetch(``)
 					.then(response1 => response1.json())
 					.then(datae => {
 						const currentPrice = data.c;
